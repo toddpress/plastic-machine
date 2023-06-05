@@ -1,28 +1,50 @@
-# create-svelte
+# Plastic Machine
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
+## Getting Started
+Open a terminal to your development folder where you keep your projects
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
+# grab the code
+git clone https://github.com/toddpress/plastic-machine.git
 
-# create a new project in my-app
-npm create svelte@latest my-app
+# change directories into plastic-machine
+cd plastic-machine
+
+# install node dependencies
+npm i
+```
+
+This will clone the latest code, downloading it into a `plastic-machine` directory in your project directory. Lastly, we install all of the necessary dependencies with npm.
+
+## Open the code
+
+Get started with your awesome contributions in the IDE of your choice. If you use VS Code like me and other basically sane people, you can drag and drop the plastic-machine directory on top of VS code or run this in the terminal session from earlier:
+
+```shell
+# Open code in the only IDE worth using for now
+code .
 ```
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've cloned/downloaded the source code, run these commands to get started:
 
 ```bash
 npm run dev
+```
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+Check out a "feature branch" and make some awesome changes, commit them, then "push" them up to the repo and create a "pull request."
+
+```shell
+git checkout -b my-awesome-feature
+
+# ... make your changes, then commit them:
+
+git add . && git commit -m "make awesome changes"
+
+# push them up to the remote repo
+
+git push -u origin main
 ```
 
 ## Building
