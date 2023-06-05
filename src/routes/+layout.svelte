@@ -5,7 +5,7 @@
 	let loading = false;
 </script>
 
-<div class="wrapper p-8">
+<div class="wrapper py-4 px-8">
 	<div class="navbar bg-base-300 shadow-md rounded-box">
 		<div class="navbar-start">
 			<a href="/" class="btn btn-ghost text-xl">Plastic Machine</a>
