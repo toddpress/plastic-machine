@@ -6,7 +6,19 @@ const config = {
 		extend: {}
 	},
 
-	plugins: [require('daisyui')]
+	daisyui: {
+		themes: [
+			'cupcake', // first one will be the default theme
+			'dracula',
+			'dark',
+			'cymk',
+		],
+	},
+
+	plugins: [
+		require('@tailwindcss/typography'),
+		require('daisyui')
+	]
 };
 
 module.exports = config;
