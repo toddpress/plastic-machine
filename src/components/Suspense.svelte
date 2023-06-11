@@ -1,20 +1,20 @@
 <script lang="ts">
-  export let component;
-  export let fallback;
+  // export let component;
+  // export let fallback;
 </script>
 
-{#if component === null}
+<!-- {#if component === null}
   {#if fallback}
     <slot name="fallback" />
-  {:else}
+  {:else} -->
     <div
       class="radial-progress"
       style="--value: 60; --size: 3.5rem;"
     >
     </div>
-  {/if}
+  <!-- {/if}
 {:else}
   <svelte:component this={component} />
-{/if}
+{/if} -->
 
 

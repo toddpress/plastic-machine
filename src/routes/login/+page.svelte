@@ -5,10 +5,15 @@
 	import type { PageData } from './$types';
 	import LoadingButton from '$components/LoadingButton.svelte';
 	import DebugForm from '$components/DebugForm.svelte';
+	import Rating from '$components/Rating.svelte';
 	let loading = false;
 
 	export let data: PageData;
 	const { form, errors } = superForm(data.form);
+
+	let onRatingChanged = (e) => {
+		$form.rating = e.detail.value;
+	}
 </script>
 
 
@@ -32,6 +37,11 @@
 			{#if $errors.password}
 				<small class="text-error">{$errors.password}</small>
 			{/if}
+			<input type="hidden" name="rating" bind:value={$form.rating} />
+			{#if $errors.rating}
+				<small class="text-error">{$errors.rating}</small>
+			{/if}
+			<Rating value={$form.rating} on:rate={(e) => {$form.rating = e.detail.value}} />
 		</div>
 		<LoadingButton {loading}>Submit</LoadingButton>
 	</form>

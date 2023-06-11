@@ -6,6 +6,7 @@ import type { Actions, RequestEvent } from './$types'
 const superValidateSchema = z.object({
   email: z.string().email(),
   password: z.string().min(8),
+  rating: z.number().int().min(1).max(5),
 })
 
 export const load = async (event) => {

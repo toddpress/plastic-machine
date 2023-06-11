@@ -22,7 +22,7 @@
 		};
 	}}
 >
-	<button class="btn btn-ghost" type="submit" disabled={loading}>
+	<button type="submit" disabled={loading}>
 		Logout
 	</button>
 </form>
