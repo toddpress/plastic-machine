@@ -6,7 +6,7 @@
   let username: string;
   let name: string;
 </script>
-<form on:submit|preventDefault class="flex flex-col gap-3 max-w-xs">
+<form on:submit|preventDefault class="flex flex-col gap-3 w-full md:w-1/2">
 	<div class="form-control w-full">
 		<label class="label label-text" for="name">Name:</label>
 		<input class="input input-bordered w-full" type="text" id="name" bind:value={name} />
