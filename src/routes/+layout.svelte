@@ -50,6 +50,7 @@
       <!-- Sidebar content here -->
 			<!-- <slot name="sidebar-nav" /> -->
 			{#if $user}
+				<li><a href="/profile">Profile</a></li>
 				<li>
 					<LogoutForm method="POST" action="/logout" />
 				</li>
