@@ -1,7 +1,11 @@
 <script lang="ts">
+  import IntersectionObserver from "svelte-intersection-observer";
 	import { Carousel, CarouselItem } from '$components/carousel';
 	export let units: any[] = [];
 	export let title: string = 'Units';
+
+  let lastElement: HTMLElement;
+  let intersecting: boolean = false;
 </script>
 
 <Carousel {title}>
