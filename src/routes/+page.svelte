@@ -45,10 +45,11 @@ import { UnitCarousel, LikeButton } from '$components';
 			interactive: true
 		}
 	];
+	let liked = true;
 </script>
 
 <UnitCarousel {units} title="Units" />
-<LikeButton />
+<LikeButton {liked} />
 
 <!-- <Carousel things={things} /> -->
 
