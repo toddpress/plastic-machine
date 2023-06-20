@@ -37,10 +37,10 @@
       <a href={`/unit/${unit.id}`}>
         {#if fade && i === units.length - 1}
           <IntersectionObserver element={lastElement} bind:intersecting>
-            <img src={`https://loremflickr.com/320/240?random=${i}`} alt="unit ${i + 1}" bind:this={lastElement} />
+            <img src={`https://loremflickr.com/g/320/240/3d-printed,plastic?foo={i}`} alt="unit ${i + 1}" bind:this={lastElement} />
           </IntersectionObserver>
         {:else}
-          <img src={`https://loremflickr.com/320/240?random=${i}`} alt="unit ${i + 1}" />
+          <img src={`https://loremflickr.com/g/320/240/3d-printed,plastic?foo=${i}`} alt="unit ${i + 1}" />
         {/if}
       </a>
     </CarouselItem>

@@ -48,8 +48,8 @@ import { UnitCarousel, LikeButton } from '$components';
 	let liked = true;
 </script>
 
-<UnitCarousel {units} title="Units" />
-<LikeButton {liked} />
-
-<!-- <Carousel things={things} /> -->
+<UnitCarousel {units} title="Featured Units" />
+<div class="p-2">
+	<LikeButton {liked} />
+</div>
 

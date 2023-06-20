@@ -3,7 +3,7 @@
 	export let onLike: Function = () => {};
 </script>
 
-<div class="join join-vertical lg:join-horizontal rounded-full">
+<div class="join join-vertical md:join-horizontal rounded-full">
 	<button class="btn join-item tooltip tooltip-accent" data-tip="Awesome!" on:click={() => onLike()}>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +17,7 @@
 				/>
 			</svg>
 	</button>
-	<button class="btn join-item tooltip tooltip-accent" data-tip="Da Fuq!?" on:click={() => onLike()}>
+	<button class="btn join-item tooltip tooltip-warning" data-tip="Da Fuq!?" on:click={() => onLike()}>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				fill={liked === false ? 'currentColor' : 'none'}
